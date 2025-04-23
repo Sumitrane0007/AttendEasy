@@ -32,7 +32,7 @@ public class Dashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        btnRegisterUser = new javax.swing.JButton();
+        btnViewUser = new javax.swing.JButton();
         btnExit = new javax.swing.JButton();
         btnRegisterUser1 = new javax.swing.JButton();
         btnRegisterUser2 = new javax.swing.JButton();
@@ -47,11 +47,11 @@ public class Dashboard extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(1366, 768));
         setUndecorated(true);
 
-        btnRegisterUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        btnRegisterUser.setText("View User");
-        btnRegisterUser.addActionListener(new java.awt.event.ActionListener() {
+        btnViewUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnViewUser.setText("View User");
+        btnViewUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegisterUserActionPerformed(evt);
+                btnViewUserActionPerformed(evt);
             }
         });
 
@@ -127,7 +127,7 @@ public class Dashboard extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(btnRegisterUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnRegisterUser, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnViewUser, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnRegisterUser3, javax.swing.GroupLayout.PREFERRED_SIZE, 162, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -152,7 +152,7 @@ public class Dashboard extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnRegisterUser, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnViewUser, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnRegisterUser1, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnRegisterUser3, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnRegisterUser4, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -167,9 +167,10 @@ public class Dashboard extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnRegisterUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUserActionPerformed
+    private void btnViewUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewUserActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnRegisterUserActionPerformed
+        AEUtility.openForm(ViewUser.class.getSimpleName(),new ViewUser());
+    }//GEN-LAST:event_btnViewUserActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
@@ -186,7 +187,7 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegisterUser2ActionPerformed
 
     private void btnRegisterUser3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser3ActionPerformed
-        // TODO add your handling code here:
+        AEUtility.openForm(UpdateUser.class.getSimpleName(),new UpdateUser());
     }//GEN-LAST:event_btnRegisterUser3ActionPerformed
 
     private void btnRegisterUser4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser4ActionPerformed
@@ -242,7 +243,6 @@ public class Dashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnExit;
-    private javax.swing.JButton btnRegisterUser;
     private javax.swing.JButton btnRegisterUser1;
     private javax.swing.JButton btnRegisterUser2;
     private javax.swing.JButton btnRegisterUser3;
@@ -250,5 +250,6 @@ public class Dashboard extends javax.swing.JFrame {
     private javax.swing.JButton btnRegisterUser5;
     private javax.swing.JButton btnRegisterUser6;
     private javax.swing.JButton btnRegisterUser7;
+    private javax.swing.JButton btnViewUser;
     // End of variables declaration//GEN-END:variables
 }
