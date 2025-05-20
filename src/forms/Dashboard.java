@@ -191,7 +191,7 @@ public class Dashboard extends javax.swing.JFrame {
     }//GEN-LAST:event_btnRegisterUser3ActionPerformed
 
     private void btnRegisterUser4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser4ActionPerformed
-        // TODO add your handling code here:
+        AEUtility.openForm(DeleteUser.class.getSimpleName(),new DeleteUser());
     }//GEN-LAST:event_btnRegisterUser4ActionPerformed
 
     private void btnRegisterUser5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser5ActionPerformed
