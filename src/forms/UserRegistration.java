@@ -508,8 +508,12 @@ public class UserRegistration extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new UserRegistration().setVisible(true);
+                
             }
+            
         });
+        System.out.println("Launching UI");
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -196,10 +196,13 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btnRegisterUser5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser5ActionPerformed
         // TODO add your handling code here:
+        
+        AEUtility.openForm(GenerateQr.class.getSimpleName(),new GenerateQr());
     }//GEN-LAST:event_btnRegisterUser5ActionPerformed
 
     private void btnRegisterUser6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser6ActionPerformed
         // TODO add your handling code here:
+        AEUtility.openForm(ViewQrs.class.getSimpleName(),new ViewQrs());
     }//GEN-LAST:event_btnRegisterUser6ActionPerformed
 
     private void btnRegisterUser7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser7ActionPerformed
