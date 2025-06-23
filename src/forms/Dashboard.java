@@ -207,6 +207,7 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void btnRegisterUser7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterUser7ActionPerformed
         // TODO add your handling code here:
+        AEUtility.openForm(MarkAttendance.class.getSimpleName(),new MarkAttendance());
     }//GEN-LAST:event_btnRegisterUser7ActionPerformed
 
     /**
