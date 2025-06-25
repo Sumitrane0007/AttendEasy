@@ -477,7 +477,7 @@ public class MarkAttendance extends javax.swing.JFrame implements Runnable, Thre
                 return false;
 
             }
-            String updateQuery = "update userattendance set checkout=?,workduration=? where dat=? and userid=?";
+            String updateQuery = "update userattendance set checkout=?,workduration=? where date=? and userid=?";
             PreparedStatement preparedStatement = connection.prepareStatement(updateQuery);
             preparedStatement.setString(1, currentDateTime.format(dateTimeFormatter));
             preparedStatement.setString(2, "" + hours + " Hours and " + minutes + "Minutes");
